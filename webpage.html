@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Foundational Webpage</title>
+<style>
+  /* Reset and base styles */
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f5f7fa;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+  .container {
+    max-width: 600px;
+    background: white;
+    padding: 30px 40px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    border-radius: 10px;
+  }
+  h1 {
+    color: #007acc;
+    margin-top: 0;
+  }
+  h2 {
+    color: #005a99;
+  }
+  p {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+  }
+  img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: block;
+  }
+  a {
+    color: #007acc;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  a:hover, a:focus {
+    text-decoration: underline;
+  }
+  button {
+    background-color: #007acc;
+    border: none;
+    color: white;
+    padding: 12px 25px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  button:hover, button:focus {
+    background-color: #005a99;
+  }
+  @media (max-width: 400px) {
+    body {
+      padding: 10px;
+    }
+    .container {
+      padding: 20px;
+    }
+    button {
+      width: 100%;
+      padding: 15px;
+      font-size: 1.1rem;
+    }
+  }
+</style>
+</head>
+<body>
+  <div class="container" role="main">
+    <h1>Welcome to My Simple Webpage</h1>
+    <p>This page demonstrates foundational concepts of <strong>HTML, CSS</strong>, and <strong>JavaScript</strong>.</p>
+
+    <h2>HTML Elements</h2>
+    <p>Here’s an example including an image and a link:</p>
+    <img src="https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&w=600&q=80" alt="Scenic Mountain View" />
+    <p>Visit <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" rel="noopener">MDN Web Docs for HTML</a> to learn more about HTML.</p>
+
+    <h2>Try Some Interaction</h2>
+    <p>Click the button below to see a JavaScript alert:</p>
+    <button id="alertButton" type="button" aria-label="Show alert message">Click Me!</button>
+  </div>
+
+  <script>
+    // Add click event listener to the button
+    document.getElementById('alertButton').addEventListener('click', function() {
+      alert('Hello! This is a JavaScript alert triggered by your click.');
+    });
+  </script>
+</body>
+</html>
+
